@@ -132,6 +132,10 @@ class LinkedList(object):
                         previous_node = current
                         current = current.get_next()
 
+    # delete linked list
+    def delete_linked_list(self):
+        self.head = None
+
 
 my_list = LinkedList()
 my_list.insert_at_position('A',0)
@@ -141,7 +145,7 @@ my_list.insert_at_position('E',3)
 my_list.insert_at_position('C',3)
 print("Before Deletion:")
 my_list.print_list()
-my_list.delete_from_position(6)
+my_list.delete_from_position(2)
 # my_list.insert_at_end(3)
 # my_list.insert_at_beginning(5)
 # my_list.insert_at_end(10)
@@ -152,3 +156,6 @@ my_list.delete_from_position(6)
 # # print(my_list.list_length())
 print("After Deletion:")
 my_list.print_list()
+print("After deleting linked list:")
+my_list.delete_linked_list()
+print(my_list.list_length())
