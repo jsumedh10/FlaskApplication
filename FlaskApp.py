@@ -8,8 +8,8 @@ def home():
     return render_template('basic.html')
 
 
-@app.route('/linkedlists/')
-def linkedlists():
+@app.route('/linked_lists/')
+def linked_lists():
     return render_template('LinkedLists.html')
 
 
