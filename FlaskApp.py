@@ -8,5 +8,10 @@ def home():
     return render_template('basic.html')
 
 
+@app.route('/linked_lists/')
+def linked_lists():
+    return render_template('LinkedLists.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)

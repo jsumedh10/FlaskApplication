@@ -1,4 +1,45 @@
-# Singly linked lists implementation
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<script type="text/javascript" src="{{ url_for('static', filename='tempJS.js') }}"></script>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Sumedh Junghare</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+    <div class="row content">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-8 text-left">
+
+<p>Following code shows singly linked lists implementation</p>
+<pre><code># Singly linked lists implementation
 
 
 # create a NODE class
@@ -137,28 +178,33 @@ class LinkedList(object):
         self.head = None
 
 
-if __name__ == '__main__':
-    my_list = LinkedList()
-    my_list.insert_at_position('A', 0)
-    my_list.insert_at_position('B', 1)
-    my_list.insert_at_position('D', 2)
-    my_list.insert_at_position('E', 3)
-    my_list.insert_at_position('C', 3)
-    print("Before Deletion:")
-    my_list.print_list()
-    my_list.delete_from_position(2)
-    # my_list.insert_at_end(3)
-    # my_list.insert_at_beginning(5)
-    # my_list.insert_at_end(10)
-    # my_list.insert_at_end(15)
-    # my_list.insert_at_beginning(20)
-    # # my_list.insert_at_beginning(100)
-    # # my_list.insert_at_end(500)
-    # # print(my_list.list_length())
-    print("After Deletion:")
-    my_list.print_list()
-    print("After deleting linked list:")
-    my_list.delete_linked_list()
-    print(my_list.list_length())
+my_list = LinkedList()
+my_list.insert_at_position('A',0)
+my_list.insert_at_position('B',1)
+my_list.insert_at_position('D',2)
+my_list.insert_at_position('E',3)
+my_list.insert_at_position('C',3)
+print("Before Deletion:")
+my_list.print_list()
+my_list.delete_from_position(2)
+# my_list.insert_at_end(3)
+# my_list.insert_at_beginning(5)
+# my_list.insert_at_end(10)
+# my_list.insert_at_end(15)
+# my_list.insert_at_beginning(20)
+# # my_list.insert_at_beginning(100)
+# # my_list.insert_at_end(500)
+# # print(my_list.list_length())
+print("After Deletion:")
+my_list.print_list()
+print("After deleting linked list:")
+my_list.delete_linked_list()
+print(my_list.list_length())
 
+    </div>
+    <div class="col-sm-2">
+    </div>
 
+    </div>
+</div>
+</code></pre></body></html>
