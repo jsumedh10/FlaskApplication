@@ -1,17 +1,52 @@
 
+/* The hero image */
+.hero {
+    /* Set a specific height */
+    height: 500px;
+    width: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.page-header {
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.jumbotron{
+    height: 300px;
+}
 /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
+
     }
 
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 515px}
+.row.content {
+    background-color: #FFFFFF;
+    height: 515px;
+    }
 
     /* Set gray background color and 100% height */
     .sidenav {
       padding-top: 20px;
-      background-color: #f1f1f1;
+      background-color: #00000;
       height: 100%;
     }
 
