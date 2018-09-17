@@ -15,7 +15,7 @@
 <!--Adding CSS file-->
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css_files/basic.css') }}">
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -33,40 +33,44 @@
         <li style="font-size: 16px;margin-top: 5px"><a href="#">Contact</a></li>
       </ul>-->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://github.com/jsumedh10"><img src="{{ url_for('static', filename='images/github.png') }}" alt="GitHub" title="GitHub" /></a></li>
+        <li><a href="https://github.com/jsumedh10/FlaskApplication"><img src="{{ url_for('static', filename='images/github.png') }}" alt="GitHub" title="GitHub" /></a></li>
         <li><a href="https://www.linkedin.com/in/sumedh-junghare-29664257/"><img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="LinkedIn" title="LinkedIn" /></a></li>
       </ul>
     </div>
   </div>
 </nav>
-
-<div class="container-fluid text-center">
+<!--<img src="{{ url_for('static', filename='images/DS.jpg')}}">-->
+<img class="hero" src="{{ url_for('static', filename='images/background.jpg') }}">
+<div class="hero-text">
+    <h1>Data Structure Tutorial</h1>
+    <p>This tutorial uses implementation of data structures using Python language.</p>
+</div>
+<div class="container-fluid text-center" style="margin-top: 50px;">
   <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <p><a href="{{ url_for('linked_lists')}}">Linked Lists</a></p>
-      <p><a href="{{ url_for('stacks') }}">Stacks</a></p>
-      <p><a href="#">Queues</a></p>
-        <p><a href="#">Trees</a></p>
-        <p><a href="#">Graphs</a></p>
-        <p><a href="#">Sorting</a></p>
-        <p><a href="#">Searching</a></p>
-        <p><a href="#">Hashing</a></p>
-    </div>
-    <div class="col-sm-8 text-left">
-
+    <!--<div class="col-sm-2">-->
+      <!--<p><a href="{{ url_for('linked_lists')}}">Linked Lists</a></p>-->
+      <!--<p><a href="{{ url_for('stacks') }}">Stacks</a></p>-->
+      <!--<p><a href="#">Queues</a></p>-->
+        <!--<p><a href="#">Trees</a></p>-->
+        <!--<p><a href="#">Graphs</a></p>-->
+        <!--<p><a href="#">Sorting</a></p>-->
+        <!--<p><a href="#">Searching</a></p>-->
+        <!--<p><a href="#">Hashing</a></p>-->
+    <!--</div>-->
+    <div class="col-sm-8 text-right">
         {% block content %}
 
         {% endblock %}
 
         </div>
-    <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
-      </div>
-    </div>
+    <!--<div class="col-sm-2">-->
+      <!--<div class="well">-->
+        <!--<p>ADS</p>-->
+      <!--</div>-->
+      <!--<div class="well">-->
+        <!--<p>ADS</p>-->
+      <!--</div>-->
+    <!--</div>-->
   </div>
 </div>
 
