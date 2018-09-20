@@ -67,6 +67,25 @@ class BinarySearchTreeNode:
 
         return result
 
+    def level_order_traversal(self, root):
+        if root == None:
+            return []
+        result = []
+        nodes = [root]
+        while nodes:
+            for node in nodes:
+                result.append(node.data)
+
+            new_nodes = []
+            for node in nodes:
+                if node.left:
+                    new_nodes.append(node.get_left())
+                if node.right:
+                    new_nodes.append(node.get_right())
+
+            nodes = new_nodes
+        return result
+
 
 root = BinarySearchTreeNode(27)
 root.insert(14)
@@ -80,3 +99,4 @@ root.insert(42)
 print(root.pre_order_traversal(root))
 print(root.in_order_traversal(root))
 print(root.post_order_traversal(root))
+print(root.level_order_traversal(root))
